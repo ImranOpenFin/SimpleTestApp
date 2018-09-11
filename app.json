@@ -16,7 +16,7 @@
         "resizable": true,
         "windowState": "normal",
         "saveWindowState": false,
-        "autoShow": true,
+        "autoShow": false,
         "showTaskbarIcon": true,
         "applicationIcon": "http://localhost:8080/favicon.ico"
     },
