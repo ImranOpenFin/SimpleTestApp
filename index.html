@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -29,16 +29,15 @@
 
       function anotherWindow(){
          if (typeof fin !== 'undefined') {
-            new fin.desktop.Window({
+            var win = new fin.desktop.Window({
               name: "Another Window",
-              url: "anotherWindow.html",
+              url: "http://google.com",
               defaultLeft: 10,
               defaultTop: 220,
+              saveWindowState:true,
               autoShow: true
             });
-        } else {
-            window.open('anotherWindow.html');
-        }
+        } 
       }
 
 </script>

@@ -16,7 +16,7 @@
         "resizable": true,
         "windowState": "normal",
         "saveWindowState": false,
-        "autoShow": false,
+        "autoShow": true,
         "showTaskbarIcon": true,
         "applicationIcon": "http://localhost:8080/favicon.ico"
     },
@@ -24,6 +24,7 @@
         "arguments": "",
         "version": "stable"
     },
+    "splashScreenImage": "http://localhost:8080/openfin-splashscreen.png",
     "shortcut": {
         "company": "OpenFin",
         "description": "Openfin POC",
