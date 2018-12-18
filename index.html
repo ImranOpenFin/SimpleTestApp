@@ -11,6 +11,7 @@
     <br />
     <button onclick="closeMyApp()">Close Me</button>
     <button onclick="anotherWindow()">Another Window</button>
+    <button onclick="anotherApplication()">Another Application</button>
     <script src="js/app.js"></script>
    
    <script>
@@ -35,11 +36,33 @@
               defaultLeft: 10,
               defaultTop: 220,
               saveWindowState:true,
+              accelerator:{zoom:true},
               autoShow: true
             });
         } 
       }
 
+
+    function anotherApplication(){  
+    var app = new fin.desktop.Application({
+    url: "http://bbc.co.uk",
+    uuid: "74BED629-2D8E-4141-8582-73E364BDFA74",
+    name: "Application Name",
+    mainWindowOptions: {
+        defaultHeight: 600,
+        defaultWidth: 800,
+        defaultTop: 300,
+        defaultLeft: 300,
+        accelerator:{zoom:true},
+        autoShow: true
+    }
+}, function () {
+    console.log("Application successfully created");
+    app.run();
+}, function (error) {
+    console.log("Error creating application:", error);
+});
+}
 </script>
 
   </body>

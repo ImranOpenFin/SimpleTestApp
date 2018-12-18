@@ -18,6 +18,9 @@
         "saveWindowState": false,
         "autoShow": true,
         "showTaskbarIcon": true,
+        "accelerator": {
+            "zoom": true
+        },
         "applicationIcon": "http://localhost:8080/favicon.ico"
     },
     "runtime": {
